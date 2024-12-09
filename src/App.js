@@ -158,7 +158,7 @@ const SingleSeat = ({row,col,bookedTill,seatsArray,numberInput}) => {
       }
     }
     getSeatStatus(row,col)
-  },[bookedTill.row,bookedTill.col,numberInput])
+  },[bookedTill.row,bookedTill.col,numberInput,col,row,seatsArray])
 
   return <div className={`seatStyles ${currentCss}`}></div>
 }
